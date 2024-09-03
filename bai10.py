@@ -11,7 +11,7 @@ b = (so_xe % 1000)//100
 c = ((so_xe % 1000)%100)//10
 d = so_xe % 10
 
-so_nut = a + b + c + d
+so_nut = (a + b + c + d)%10
 
 if (a>9 or a<0) or (b>9 or b<0) or (c>9 or c<0) or (d>9 or d<0):
     print("Số xe không hợp lệ")
